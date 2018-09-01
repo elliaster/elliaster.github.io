@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lab 19</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width,initial-scale=0.8">
+<!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#707070">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#707070">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#707070">
+<!-- Mobile Capable -->
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" href="Lab_7/img/favicon.png" type="image/png">
+</head>
+
+<body>
+<center>
+  <div id="banner">
+    <h1 id="lab">Lab 19</h1>
+  </div>
+  <div id="bannerName">
+    <h4 id="name">Mohammed Hashan</h4>
+    <h5 class="data">Digital Design</h5>
+    <h5 class="data" id="dataBtm">March 16, 2018</h5>
+  </div>
+  <div id="paragraph"> <span>Choose a number between 0 and 25:</span> </div>
+  <div id="calculator"><br />
+      <input class="inputForm" id="input" type="text" name="input" placeholder="Input Number">
+      <br>
+	  <div id="buttonStyle">
+		  <button class="button buttonBottom" onClick="protocol()">Check</button> <br>
+		   <p class="output" id="output"></p>
+		  <button class="button buttonBottom" id="reset" onClick="reset()">Reset</button>
+   
+	  <p class="output" id="para">The value that you put into the textbox is random, and you must guess the correct value. Everytime you guess a value, there will be a prompt that tells you if you are too high or too low based on the value you chose and the value the computer generated. When you find the right value, there will be a prompt that tells you, you have guess the correct value.</p>
+  </div>
+	</div>
+  <script>
+	  var input = document.getElementById('input').value;
+	  var value = Math.floor(Math.random() * 25);
+	  
+	  function protocol () {
+		  if (value == document.getElementById('input').value) {
+			  document.getElementById('output').innerHTML = "Correct!";
+		  } else if (value < document.getElementById('input').value) {
+			  document.getElementById('output').innerHTML = "Too High!";
+		  } else if (value > document.getElementById('input').value) {
+			  document.getElementById('output').innerHTML = "Too Low!";
+		  }
+	  }
+	  
+	  function reset () {
+		  value = Math.floor(Math.random() * 25);
+		  document.getElementById('output').innerHTML = "Value has been changed!"
+	  }
+	</script>
+</center>
+</body>
+</html>

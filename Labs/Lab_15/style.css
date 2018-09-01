@@ -1,0 +1,70 @@
+@font-face {
+	font-family: roboto;
+	src: url(http://techteach.us/Web2019/Hmohammed/fonts/Roboto-Regular.ttf)
+}
+
+@keyframes slideTop {
+	0% {
+	  transform: translateY(-100%);
+	  opacity: 0;
+	}
+	87% {
+		opacity: 0.1;
+	}
+	100% {
+	  transform: translateX(0);
+	  opacity: 1 ;
+	}
+}
+
+html {
+	font-family: roboto;
+	margin: 0px;
+	padding: 0px;
+	background-color: #133253;
+	color: #738CA6;
+}
+
+h1 {
+	font-size: 5em;
+	margin-bottom: 0px;
+	animation: 0.5s ease-out 0s 1 slideTop;
+}
+
+h4 {
+	margin-top: 0px;
+	margin-bottom: 5px;
+	font-size: 2em;
+	animation: 0.5s ease-out 0s 1 slideTop;
+}
+
+#paragraph {
+	width: 80%;
+	color: #B1C0D1!important;
+	animation: 0.5s ease-out 0s 1 slideTop;
+}
+
+button {
+	margin-top: 100px;
+	background-color: #041D37;
+	border: 0px;
+	padding: 10px;
+	color: white;
+	transition: all 300ms;
+	animation: 0.5s ease-out 0s 1 slideTop;
+}
+
+button:hover {
+	background-color: #738CA6;
+	color: black;
+}
+
+.data {
+	margin: 0px;
+	padding: 10px;
+	font-size: 1em;
+}
+
+#dataBtm {
+	padding-bottom: 15px!important;
+}

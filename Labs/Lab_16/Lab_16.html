@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lab 16</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width,initial-scale=0.8">
+<!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#707070">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#707070">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#707070">
+<!-- Mobile Capable -->
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" href="Lab_7/img/favicon.png" type="image/png">
+</head>
+
+<body>
+<center>
+  <div id="banner">
+    <h1 id="lab">Lab 16</h1>
+  </div>
+  <div id="bannerName">
+    <h4 id="name">Mohammed Hashan</h4>
+    <h5 class="data">Digital Design</h5>
+    <h5 class="data" id="dataBtm">March 14, 2018</h5>
+  </div>
+  <div class="paragraph"> <span>Type your information in the form below:</span> </div>
+  <form name="addressForm">
+    <div id="formCSS"> <span>Name :</span>
+      <input class="inputForm" type="text" name="inputName" placeholder="Enter Your Name">
+      <br>
+      <span>Phone :</span>
+      <input class="inputForm" type="tel" name="inputPhone" placeholder="Enter Phone Number">
+      <br>
+      <span>SSN :</span>
+      <input class="inputForm" type="number" id="stealSSN" name="inputStealIdentity" placeholder="Enter Your Social Security Number">
+      <br>
+      <input type="button" value="Submit" onClick="window.alert('Hello!, ' + document.addressForm.inputName.value + ' your phone number is ' + document.addressForm.inputPhone.value + ' and your social security number is, ' + document.addressForm.inputStealIdentity.value + '. Is this alright?'); status();" id="button" />
+    </div>
+  </form>
+  <p id="status"></p>
+	<p class="paragraph">We were supposed to create a simple form that would allow the user to input specific information that will display a message. In this case their Name and Phone Number, as well as E-mail. Once this information is entered the user will receive an alert on the browser asking them to confirm the information they had inputted. Afterwards a line of text saying they were registered would appear.</p>
+	<script>
+		function status (){
+			document.getElementById('status').innerHTML = "Congrats!, You have been registered";
+		}
+	</script>
+</center>
+</body>
+</html>

@@ -1,0 +1,56 @@
+body {
+	background-color: aliceblue;	
+}
+		
+p {
+	width: 70%;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 1.2em;
+	color: #44739D;
+}
+
+h1, h3 {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 2.5em;
+	margin: 20px 0px 10px 0px;
+	color: #44739D;
+		}
+
+h4 {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	color: #44739D;
+}
+
+#applicantImage {
+	border: dashed;
+	color: #44739D;
+	margin: 0px 0px 20px 0px;
+}
+
+.unordered {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			width: 60px;
+			background-color: #dddddd;
+		}
+		
+		.listed{
+			display: inline;
+			float: left;
+			}
+			.listed:hover {
+				color: #808080;
+			}
+
+		.a {
+    		display: block;
+    		padding: 10px;
+    		background-color: #dddddd;
+}
+
+@media only screen and (max-width: 800px) {
+			img {
+				width: 80%
+			}
+		}

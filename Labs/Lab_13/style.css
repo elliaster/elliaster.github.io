@@ -1,0 +1,256 @@
+/* CSS Document */
+
+/* example */
+body {
+	background-image: url(img/wallhaven-572944.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+/* Navbar */
+
+.listNav {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+	display: inline;
+	float: left;
+	text-decoration: none;
+}
+
+.listNav:hover {
+    background-color: #111;
+	text-decoration: none;
+}
+
+.listNav a:hover {
+	text-decoration: none;
+}
+
+.navList {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2b2b2b;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+}
+
+/* Dropdown */
+.imgDrop {
+	position: relative;
+    display: inline-block;
+}
+
+.imgDrop-content {
+	display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 600px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 12px;
+    z-index: 1;
+}
+
+.imgDrop:hover .imgDrop-content {
+	display: block;
+}
+
+/* Paragraphs / Text */
+
+#containerParagraph {
+	color: white;
+	font-size: 1.2em;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	border: 2px solid #fff;
+	border-radius: 22px;
+	width: 80%;
+	padding: 10px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+
+#paddingParagraph {
+	padding-bottom: 10px;
+}
+
+p::first-line {
+    color: #fff;
+    font-variant: normal;
+	font-weight: bold;
+}
+
+
+h1 {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	color: white!important;
+	font-size: 4em;
+}
+
+div.containment {
+	list-style-type: none;
+}
+
+.loremList {
+	margin: auto;
+	list-style-type: square;
+}
+
+/* Images */
+
+img {
+	border: 2px solid #fff;
+	border-radius: 10px;
+	display: block;
+	max-width: 1300px;
+	float: none;
+}
+
+img:hover {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+
+/* Links */
+
+a {
+	font-size: 2em;
+}
+
+a:link {
+    color: red;
+}
+a:visited {
+    color: green;
+}
+a:hover {
+    color: hotpink;
+}
+a:active {
+    color: blue;
+}
+
+a[target="_blank"] { 
+    background-color: yellow;
+}
+
+/* Table */
+
+#tableContainer {
+	color: white;
+	border-collapse: collapse;
+}
+
+.tableList {
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+}
+
+/* ToolTips */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+	
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* Misc */
+
+i {
+	display: block;
+	position: absolute;
+	padding-top: 2%;
+	color: white;
+}
+
+#line {
+	height: 2px;
+    background-color: #fff;
+	width: 100%;
+}
+
+.floatBox {
+	 display: inline-block;
+    width: 150px;
+    height: 75px;
+    margin: 10px;
+    border: 3px solid #fff; 
+}
+
+/* Image Gallery */
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Forms */
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #ddd;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #ccc;
+}
+
+div.form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}

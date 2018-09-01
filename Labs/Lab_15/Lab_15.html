@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lab 15</title>
+<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width,initial-scale=0.8">
+<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#707070">
+<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#707070">
+<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#707070">
+<!-- Mobile Capable -->
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" href="Lab_7/img/favicon.png" type="image/png">
+</head>
+
+<body>
+	<center>
+	<div id="banner">
+		<h1 id="lab">Lab 15</h1>
+	</div>
+	<div id="bannerName">
+		<h4 id="name">Mohammed Hashan</h4>
+		<h5 class="data">Digital Design</h5>
+		<h5 class="data" id="dataBtm">March 13, 2018</h5>
+	</div>
+		<div id="paragraph">
+			This lab was made for us to learn to use onClick events, and changing elements in the HTML using JavaScript. <br>
+			We also used CSS to make the pages look better than default pages. <br>
+			But, you can already see that.
+		</div>
+		
+		<button type="button" onClick="helloWorld()">Click Here!</button>
+	</center>
+	
+	<script>
+		function helloWorld (){
+			document.getElementById('paragraph').innerHTML = "Hello World!";
+		}
+	</script>
+</body>
+</html>

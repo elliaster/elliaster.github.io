@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lab 21</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width,initial-scale=0.8">
+<!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#707070">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#707070">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#707070">
+<!-- Mobile Capable -->
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" href="Lab_7/img/favicon.png" type="image/png">
+</head>
+
+<body>
+<center>
+  <div id="banner">
+    <h1 id="lab">Lab 21</h1>
+  </div>
+  <div id="bannerName">
+    <h4 id="name">Mohammed Hashan</h4>
+    <h5 class="data">Digital Design</h5>
+    <h5 class="data" id="dataBtm">March 27, 2018</h5>
+  </div>
+  <div class="paragraph"> <span>Type your information in the form below:</span> </div>
+	<div class="container">
+    <form name="addressForm">
+  <table>
+    <tr>
+      <td><span>First Name* :</span></td>
+      <td><input class="inputForm" type="text" name="inputFName" placeholder="Enter First Name"></td>
+      <td><span class="restriction" id="firstName"></span></td>
+    </tr>
+    <tr>
+      <td><span>Last Name* : </span></td>
+      <td><input class="inputForm" type="text" name="inputLName" placeholder="Enter Last Name"></td>
+      <td><span class="restriction" id="lastName"></span></td>
+    </tr>
+    <tr>
+      <td><span>Email* :</span></td>
+      <td><input class="inputForm" type="text" name="inputEmail" placeholder="Enter Email Address"></td>
+      <td> <span class="restriction" id="email"></span></td>
+    </tr>
+    <tr>
+      <td><span>Phone* :</span></td>
+      <td><input class="inputForm" type="tel" name="inputPhone" placeholder="Enter Phone Number"></td>
+      <td><span class="restriction" id="phoneNum"></span></td>
+    </tr>
+    <tr>
+      <td><span>Address :</span></td>
+      <td><input class="inputForm" type="text" id="inputAddress" name="inputLocation" placeholder="Enter Address"></td>
+      <td> <span class="restriction" id="locale"></span></td>
+    </tr>
+    <tr>
+      <td><span>Zip* :</span></td>
+      <td><input class="inputForm" type="number" id="inputZip" name="inputLocale" placeholder="Enter Zip Code"></td>
+      <td><span class="restriction" id="zip"></span></td>
+    </tr>
+    <tr>
+      <td><span>Credit Card Number* :</span></td>
+      <td><input class="inputForm" type="number" id="ccn" name="inputStealMoney" placeholder="Enter Credit Card Number"></td>
+      <td><span class="restriction" id="CCNSpan"></span></td>
+    </tr>
+  </table>
+    <input type="button" value="Submit" onClick="return funcCall()" id="button"/>
+		<span id="output"></span>
+  </form></div>
+	<p class="paragraph">We were supposed to create a registry form that would ask for First Name*, Last Name*, Email*, Phone*, Address, Zip Code*, and Credit Card Number*, anything in an asterisk is necessary information that the user must input. It will check to see if all the information described was valid. If the information was valid then it displays a check mark, if the information isn't valid it will display what is wrong with that input.</p>
+	<script>
+		//Calls for all the other function
+  function funcCall() {
+    nameFirst();
+    nameLast();
+    inputPhone();
+    validFormCCN();
+    validFormZip();
+    emailVal();
+  }
+		//function to validate the zip code
+  function validFormZip() {
+    var zip, text;
+    zip = document.getElementById('inputZip').value;
+    if (isNaN(zip) || zip < 00501 || zip > 99950) {
+      text = "Invalid Zip Code";
+    } else if (zip > 00501 || zip < 99950 && zip.length == 5) {
+      text = "&#10004;";
+    }
+    document.getElementById('zip').innerHTML = text;
+  }
+		
+	/*function validFormZip() {
+	var zip, text;
+	zip = document.getElementById('inputZip').value;
+	if (isNaN(zip)) {
+		text = "Don't Leave Blank";
+	} else if (zip.length == 5) {
+		text = "&#10004;";
+	} else if (zip > 00501 || zip < 99950) {
+		text = "Invalid Zip Code";
+	}
+		document.getElementById('zip').innerHTML = text;
+	}*/
+
+  /*function validFormCCN() {
+    var ccn, textC;
+    ccn = document.getElementById('ccn').value;
+    if (isNaN(ccn) || ccn < 4000000000000000 || ccn > 5999999999999999) {
+      textC = "Enter correct card number";
+    } else {
+        textC = "&#10004;";
+      }
+    document.getElementById("CCNSpan").innerHTML = textC;
+  }*/
+		
+		//function for validating Credit Card Numbers
+	function validFormCCN() {
+		var ccn, text;
+		ccn = document.getElementById('ccn').value;
+		if (ccn % 2 == 0 && ccn.length == 16) {
+			document.getElementById('CCNSpan').innerHTML = "&#10004;";
+		} else if (isNaN(ccn) || ccn.length > 16 || ccn.length < 16 && ccn % 2 !== 0) {
+			document.getElementById('CCNSpan').innerHTML = "Invalid Card Number";
+		} else {
+			document.getElementById('CCNSpan').innerHTML = "Invalid Card Number";
+		}
+	}
+		
+		//function for validating Email
+  function emailVal() {
+    if (addressForm.inputEmail.value == "") {
+      document.getElementById('email').innerHTML = "Email Unspecified";
+      //alert("Please Enter Email Address!");
+      addressForm.inputEmail.value();
+      return false;
+    }
+    var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    if (reg.test(addressForm.inputEmail.value) == false ) {
+      document.getElementById('email').innerHTML = "Invalid";
+      //alert("Invalid Email Address");
+      addressForm.inputEmail.focus();
+      return false;
+    } else {
+      document.getElementById('email').innerHTML = "&#10004;"
+    }
+    return true;
+  }
+		
+		//Function for registering First name
+  function nameFirst() {
+    if (addressForm.inputFName.value == ""){
+      document.getElementById('firstName').innerHTML = "Don't leave blank";
+    } else {
+      document.getElementById('firstName').innerHTML = "&#10004;";
+    }
+  }
+
+		//Function to register last name
+  function nameLast() {
+    if (addressForm.inputLName.value == ""){
+      document.getElementById('lastName').innerHTML = "Don't leave blank";
+    } else {
+      document.getElementById('lastName').innerHTML = "&#10004;";
+    }
+  }
+
+		//Function for registering phone number
+  function inputPhone() {
+    var phone = addressForm.inputPhone.value
+    var n = phone.length;
+    if (addressForm.inputPhone.value == ""){
+      document.getElementById('phoneNum').innerHTML = "Enter Phone Number";
+    } else if (n > 9 && n < 11) {
+      document.getElementById('phoneNum').innerHTML = "&#10004;";
+    }
+  }
+
+		/*function phoneNumber(inputTxt){
+			var phoneNum = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+			if ((inputTxt.value.match(phoneNum))) {
+				return true;
+			} else {
+				alert("Phone Number False");
+				return false;
+			}
+		}*/
+	</script>
+</center>
+</body>
+</html>

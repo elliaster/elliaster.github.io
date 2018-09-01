@@ -1,0 +1,53 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<title>Lab 20</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#707070">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#707070">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#707070">
+<!-- Mobile Capable -->
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" href="Lab_7/img/favicon.png" type="image/png">
+</head>
+
+<body>
+<center>
+  <div id="banner">
+    <h1 id="lab">Lab 20</h1>
+  </div>
+  <div id="bannerName">
+    <h4 id="name">Mohammed Hashan</h4>
+    <h5 class="data">Digital Design</h5>
+    <h5 class="data" id="dataBtm">March 26, 2018</h5>
+  </div>
+  <div id="paragraph"> <span>Press the Button:</span> </div>
+  <div id="calculator"><br />
+      <p class="output" id="output"></p>
+      <br>      
+	  <div id="buttonStyle">
+		  <button class="button buttonBottom" onClick="protocol()">Go</button> <br>
+	  <p class="output" id="para"></p>
+  </div>
+	</div>
+  <script>
+	  function protocol() {
+		var name = prompt("What is your name?");
+		var dur = prompt("How long did you work on code?")
+		var y = alert(name + " worked on code for "  + dur + ".");
+		con = confirm("Do you want to continue?")
+		if (con) {
+			var durA = prompt("How long will you continue to work?")
+			alert(name + " will continue to work for " + durA + " hours!")
+		} else {
+			alert(name + " stopped working.")
+		}
+	}
+	</script>
+</center>
+</body>
+</html>
