@@ -12,6 +12,7 @@ body {
 	background: black;
 	position: fixed;
 	color: white;
+	font-family: sans-serif;
 }
 .message {
 	margin: 0 auto;
