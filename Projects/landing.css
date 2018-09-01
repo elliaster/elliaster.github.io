@@ -1,0 +1,28 @@
+@font-face {
+	font-family: roboto;
+	src: url(http://techteach.us/Web2019/Hmohammed/fonts/Roboto-Thin.ttf);
+}
+
+body {
+	user-select: none;
+	margin-top: 100px;
+	left: 250px;
+	width: 100vw;
+	height: 100vh;
+	background: black;
+	position: fixed;
+	color: white;
+}
+.message {
+	margin: 0 auto;
+	font-family: roboto;
+	font-weight: bolder;
+	padding: 1%;
+	font-size: 8vh;
+}
+
+@media screen and (max-width: 7in) {
+	body {
+		left: 0;
+	}
+}

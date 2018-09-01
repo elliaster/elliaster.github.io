@@ -1,0 +1,205 @@
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@font-face {
+  font-family: 'roboto';
+  src: url('materialize\fonts\roboto\Roboto-Regular.woff2') format('woff2'), url('materialize\fonts\roboto\Roboto-Regular.woff') format('woff');
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	color: white;
+}
+
+body {
+	margin-left: -20px;
+	overflow-x: hidden;
+	font-family: roboto, Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	background-image: url(photo/backdrop.jpg);
+	background-attachment: fixed;
+	background-position: center;
+}
+
+#headerName {
+	position: absolute;
+	left: 120px;
+	top: 50px;
+	font-size: 5em;
+	color: white;
+	width: 50%;
+}
+
+.subtitle {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+#quote {
+	position: absolute;
+	left: 200px;
+	top: 250px;
+	color: white;
+}
+
+#bioSection, #careerSection, #impactSection {
+	top: 100px;
+	margin-left: 100px;
+	position: absolute;
+	font-size: 70px;
+	display: none;
+}
+
+#bioSectParagraph, #careerSectParagraph, #impactSectionParagraph {
+	position: absolute;
+	line-height: 22px;
+	width: 50%;
+	margin-top: 200px;
+	padding-left: 200px;
+	padding-right: 10px;
+	display: none;
+	height: 240px;
+	overflow-y: scroll;
+}
+
+img {
+	float: right;
+	position: absolute;
+	z-index: 3;
+}
+
+#select4 {
+	float: right;
+	margin-right: 100px;
+}
+
+nav {
+	transform: translateX(20px);
+	position: fixed;
+	width: 100%;
+	margin: 0 auto;
+	border-radius: 10px;
+	bottom: 100px;
+}
+
+nav ul {
+  	overflow: hidden;
+  	display: block;
+  	padding: 0;
+	padding-left: 50px;
+  	text-align: left;
+  	color: #859CE5;
+  	background-color: #3F56A1;
+	animation: 0.5s ease-out 0s 1 slideInFromLeft;
+}
+
+nav ul li {
+  	display: inline-block;
+  	padding: 2%;
+  	transition: all 150ms ease-out 50ms;
+}
+
+nav ul li:hover {
+  	background-color: #E1E8FD;
+  	text-shadow: 3px 3px 7px #233D92;
+	color: rgba(255,255,255,1.00);
+}
+
+li {
+  transition: all 300ms linear 0ms;
+}
+
+li:hover {
+  transform: translateY(-10px);
+}
+
+a {
+  	font-size: 50px;
+  	font-weight: 500;
+  	text-decoration: none;
+	color: #859CE5;
+}
+
+a:hover {
+	color: white;
+}
+
+#person {
+	padding-top: 50px;
+	z-index: -1;
+	position: absolute;
+	right: 100px;
+}
+
+#line {
+  	width: 100%;
+	position: absolute;
+  	height: 10px;
+  	margin: 0 0;
+  	background-color: #415DB9;
+	left: 0px;
+	padding-left: 100px;
+}
+
+#myVideo {
+	z-index: -1;
+	object-fit: fill;
+    position: fixed;
+	min-height: 100%;
+	min-width: 100%;
+}
+
+#shade {
+	left: 50px;
+	z-index: 0;
+	width: 50%;
+	height: 475px;
+	background-color: rgba(0,0,0,0.50);
+	position: absolute;
+}
+
+/* Custom Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(8,109,216,0.67);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(27,106,189,0.58); 
+}
+
+@media screen and (min-width: 768px) {
+	body {
+		overflow: hidden;
+	}
+	
+	#shade {
+		height: 400px;
+	}
+	
+	#headerName {
+		margin: 0px;
+		top: 0px;
+	}
+	
+	#impactSection, #careerSection, #bioSection {
+		top: 10px;
+	}
+	
+	#bioSectParagraph, #careerSectParagraph, #impactSectionParagraph {
+		margin-top: 0px;
+		top: 120px;
+	}
+}

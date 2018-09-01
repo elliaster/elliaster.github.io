@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#787878">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#787878">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#787878">
+<!-- Mobile Capable -->
+<meta name="mobile-web-app-capable" content="yes">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../Labs/style.css">
+<title>Lab Index</title>
+</head>
+
+<body>
+	<div id="mySidenav" class="sidenav">
+	<table>
+		<tr>
+			<td><span class="indexTitle" id="lab">Lab Index</span></td>
+			<td><a href="javascript:void(0)" class="closebtn" onclick="closeNav(); hideLab()">&times;</a> </td>
+		</tr>
+	</table>
+	
+	<a href="Project_1/Project_1.html" target="frameId" onClick="document.title = 'Project 1';">Project 1</a>
+	<a href="PJ_favTeacher/index.html" target="frameId" onClick="document.title = 'Project 2';">Project 2</a>
+	<a href="../CreatePT/index.html" target="frameId" onClick="document.title = 'Create PT';">Create PT</a>
+	<a href="" target="_top" style="text-decoration: line-through;">Project 3</a>
+	<div style="height: 100px;"></div>
+	</div>
+	<div id="lineVer">
+		<span class="menu" id="spanMenu" style="font-size:30px;cursor:pointer; color: white;" onclick="openNav()">&#9776;</span>
+		<span class="menu" style="font-size:30px;cursor:pointer; color: white;"><a href="http://techteach.us/Web2019/Hmohammed/">&#8962;</a></span>
+	</div>
+	<iframe frameborder="0" name="frameId" id="InlineFrame1" src="landingPageProj.html">Your browser does not support iframes.</iframe>
+	<script>	
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "256px";
+			}
+
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+			}
+	</script>
+</body>
+</html>
