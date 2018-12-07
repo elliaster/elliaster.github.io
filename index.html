@@ -4,19 +4,23 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Link Section -->
 	<link rel="icon" href="SVG/logohh.png">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/arrow.css">
 	<link rel="stylesheet" href="css/next.css">
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
 	<link rel="stylesheet" href="animatedHeadline/css/style.css">
 	<link rel="stylesheet" href="animatedHeadline/css/reset.css">
 	<link rel="stylesheet" href="pagePiling/jquery.pagepiling.css">
+	<link rel="stylesheet" href="css/responsive.css"> <!-- Work on making site responsive -->
 	<script src="animatedHeadline/js/modernizr.js" charset="utf-8"></script>
 	<title>Main Index</title>
 </head>
 <body>
 	<div id="pagepiling">
+		<!-- Landing Page -->
 		<div class="section active" id="section1">
 			<div id="particles-js">
 				<object type="img/xml+svg" data="SVG/akashhashanLogo.svg">
@@ -32,23 +36,29 @@
 			</div>
 			<div class="arrow" id="arrowMain"></div>
 		</div>
+
 		<!-- Labs -->
 		<div class="section" id="section2">
 			<div id="labSide">
 				<span id="labSideText">Labs</span>
 			</div>
-			<iframe src="https://www.hentaihaven.org/" width="1280" height="720" class="labFrame"></iframe>
+			<div class="hamburger">☰</div>
+			<iframe src="blank.html" width="1280" height="720" class="labFrame"></iframe>
 			<div class="arrow" id="arrowSecond"></div>
 		</div>
+
 		<!-- Projects -->
 		<div class="section" id="section3">
 			<div id="projectSide">
 				<span id="labSideText">Projects</span>
 			</div>
-			<iframe src="https://www.hanime.tv" width="1280" height="720" class="labFrame projectFrame"></iframe>
+			<div class="hamburger">☰</div>
+			<iframe src="blank.html" width="1280" height="720" class="labFrame projectFrame"></iframe>
 			<div class="arrow arrowUp" id="arrowThird"></div>
 		</div>
 	</div>
+
+	<!-- JavaScript Library Initialization  -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="animatedHeadline/js/main.js" charset="utf-8"></script>
 	<script src="pagePiling/jquery.pagepiling.js" charset="utf-8"></script>
@@ -56,9 +66,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js" charset="utf-8"></script>
 	<script>
 		// Particles JS
-		particlesJS.load('particles-js', 'particles.json', function () {
-			console.log("Json file loaded");
-		});
+		particlesJS.load('particles-js', 'particles.json', function () {});
 	</script>
 </body>
 </html>

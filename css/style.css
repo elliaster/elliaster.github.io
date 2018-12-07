@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	font-family: Oswald, sans-serif;
+	font-family: 'Oswald', sans-serif;
 	user-select: none;
 }
 
@@ -12,13 +12,12 @@ body {
 	position: absolute;
 	text-align: left;
 	line-height: 15vh;
-	left: 10vw;
-	top: 25vh;
+	left: 5vw;
+	top: 55vh;
 	letter-spacing: 2.5vw;
 	font-size: 10vh;
-	font-family: Oswald, sans-serif;
+	font-family: 'Share Tech Mono', monospace;
 	color: black;
-	z-index: 10;
 }
 
 #line {
@@ -74,6 +73,7 @@ object {
 	height: 100vh;
 	position: absolute;
 	left: -10vw;
-	top: 10vh;
+	top: 1vh;
 	opacity: 0.5;
+	transform: rotate(-45deg);
 }
