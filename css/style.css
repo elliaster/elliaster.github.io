@@ -1,0 +1,79 @@
+body {
+	margin: 0;
+	font-family: Oswald, sans-serif;
+	user-select: none;
+}
+
+*::selection {
+	background-color: #171717;
+}
+
+#mainHeadline {
+	position: absolute;
+	text-align: left;
+	line-height: 15vh;
+	left: 10vw;
+	top: 25vh;
+	letter-spacing: 2.5vw;
+	font-size: 10vh;
+	font-family: Oswald, sans-serif;
+	color: black;
+	z-index: 10;
+}
+
+#line {
+	position: absolute;
+	border-top: 0.2vh solid white;
+	width: 120vh;
+}
+
+#mainContainer {
+	color: white;
+	z-index: -9;
+	font-family: oswald, sans-serif;
+	background-color: #2D457F;
+}
+
+	#hello {
+		position: absolute;
+		top: 15vh;
+		text-align: center;
+		font-size: 5vh;
+	}
+
+#secondaryContainer {
+	color: white;
+	background-color: white;
+	font-size: 5vh;
+	font-family: oswald, sans-serif;
+}
+
+	#hi {
+		position: absolute;
+		top: 115vh;
+		margin-left: 45vw;
+		text-align: center;
+	}
+
+#tertiaryContainer {
+	color: white;
+	font-size: 5vh;
+	font-family: oswald, sans-serif;
+}
+
+	#yes {
+		position: absolute;
+		top: 215vh;
+		margin-left: 47vw;
+		margin-right: 53vw;
+		text-align: center;
+	}
+
+object {
+	width: 50vw;
+	height: 100vh;
+	position: absolute;
+	left: -10vw;
+	top: 10vh;
+	opacity: 0.5;
+}

@@ -4,17 +4,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="SVG/1x/akashhashanLogo.png">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/arrow.css">
+	<link rel="stylesheet" href="css/next.css">
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 	<link rel="stylesheet" href="animatedHeadline/css/style.css">
 	<link rel="stylesheet" href="animatedHeadline/css/reset.css">
 	<link rel="stylesheet" href="pagePiling/jquery.pagepiling.css">
-	<link rel="stylesheet" href="pagePiling/demo.css">
-	<!--
-	<script src="fullscreen/fullpage.js" charset="utf-8"></script>
-	<script src="fullscreen/fullpage.extensions.min.js" charset="utf-8"></script>
-	<link rel="stylesheet" href="fullscreen/fullepage.css">
-	 -->
 
 	<script src="animatedHeadline/js/modernizr.js" charset="utf-8"></script>
 
@@ -24,6 +21,9 @@
 	<div id="pagepiling">
 		<div class="section active" id="section1">
 			<div id="particles-js">
+				<object type="img/xml+svg" data="SVG/akashhashanLogo.svg">
+					<img src="SVG/akashhashanLogo.svg" alt="Logo">
+				</object>
 				<h1 class="cd-headline letters type" id="mainHeadline">
 					<span>Main</span> <br>
 					<span class="cd-words-wrapper waiting">
@@ -39,15 +39,7 @@
 			<div id="labSide">
 				<span id="labSideText">Labs</span>
 			</div>
-			<iframe src="http://techteach.us/Web2019/Hmohammed/" width="1280" height="720" id="labFrame"></iframe>
-			<div id="labNavContainer">
-				<div id="labRightArrowNav">
-					<div class="arrowNav" id="right"></div>
-				</div>
-				<div id="labLeftArrowNav">
-					<div class="arrowNav" id="left" onclick="back()"></div>
-				</div>
-			</div>
+			<iframe src="blank.html" width="1280" height="720" class="labFrame"></iframe>
 			<div class="arrow" id="arrowSecond"></div>
 		</div>
 		<!-- Projects -->
@@ -55,7 +47,7 @@
 			<div id="projectSide">
 				<span id="labSideText">Projects</span>
 			</div>
-			<iframe src="http://techteach.us/Web2019/Hmohammed/" width="1280" height="720" id="projectFrame"></iframe>
+			<iframe src="blank.html" width="1280" height="720" class="labFrame projectFrame"></iframe>
 			<div class="arrow arrowUp" id="arrowThird"></div>
 		</div>
 	</div>
@@ -63,7 +55,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="animatedHeadline/js/main.js" charset="utf-8"></script>
 	<script src="main.js" charset="utf-8"></script>
-	<script src="pagePiling/jquery.pagepiling.min.js" charset="utf-8"></script>
+	<script src="pagePiling/jquery.pagepiling.js" charset="utf-8"></script>
 	<script src="pagepilingInit.js" charset="utf-8"></script>
 	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js" charset="utf-8"></script>
 	<script>

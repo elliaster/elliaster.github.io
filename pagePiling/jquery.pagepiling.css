@@ -98,7 +98,7 @@ html, body {
 #pp-nav span,
 .pp-slidesNav span {
     top: 2px;
-    right: 1.5vw;
+    right: 0.5vw;
     width: 3vw;
     height: 1vh;
     border: 0px solid #000;
@@ -122,7 +122,7 @@ html, body {
     max-width: 220px;
 }
 .pp-tooltip.right {
-    right: 6vw;
+    right: 4.8vw;
 }
 .pp-tooltip.left {
     left: 20px;

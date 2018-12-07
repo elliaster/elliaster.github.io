@@ -39,14 +39,14 @@
                 textColor: '#000',
                 bulletsColor: '#000',
                 position: 'right',
-                tooltips: []
+                tooltips: ['Page 1', 'Page 2', 'Page 3']
             },
             normalScrollElements: null,
             normalScrollElementTouchThreshold: 5,
             touchSensitivity: 5,
             keyboardScrolling: true,
             sectionSelector: '.section',
-            animateAnchor: false,
+            animateAnchor: true,
 
             //events
             afterLoad: null,
