@@ -39,7 +39,7 @@
                 textColor: '#000',
                 bulletsColor: '#000',
                 position: 'right',
-                tooltips: ['Page 1', 'Page 2', 'Page 3']
+                tooltips: ['Page 1', 'Page 2', 'Page 3', 'Page 4']
             },
             normalScrollElements: null,
             normalScrollElementTouchThreshold: 5,

@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="css/custom/arrow.css">
 	<link rel="stylesheet" href="css/custom/next.css">
 	<link rel="stylesheet" href="css/custom/responsive.css"> <!-- Work on making site responsive -->
+	<link rel="stylesheet" href="css/custom/navigation.css">
 	<script src="js/animatedHeadline/modernizr.js" charset="utf-8"></script>
 	<title>Main Index</title>
 </head>
@@ -43,9 +44,9 @@
 				<span id="labSideText">Labs</span>
 			</div>
 			<a href="javascript:void(0)" class="hamburger" id="labHamburger">☰</a>
-			<iframe src="blank.html" width="1280" height="720" class="labFrame" name="labFrame"></iframe>
-			<div class="arrow" id="arrowSecond"></div>
-
+			<iframe src="blank.html" class="labFrame" name="labFrame"></iframe>
+			<div class="arrow arrowDown"></div>
+			<!-- Navigation for Labs -->
 			<div class="labSideNav">
 				<div id="sideNavContainer">
 					<span class="close">&times;</span>
@@ -80,21 +81,37 @@
 				<span id="labSideText">Projects</span>
 			</div>
 			<a href="javascript:void(0)" class="hamburger" id="projectHamburger">☰</a>
-			<iframe src="blank.html" width="1280" height="720" class="labFrame projectFrame" name="projectFrame"></iframe>
-			<div class="arrow arrowUp" id="arrowThird"></div>
+			<iframe src="blank.html" class="labFrame projectFrame" name="projectFrame"></iframe>
+			<div class="arrow arrowDown" id="thirdArrow"></div>
+			<!-- Navigation for Projects -->
+			<div class="projectSideNav">
+				<div id="projectNavContainer">
+					<span class="close">&times;</span>
+				</div>
+				<div id="projectNavList">
+					<ul>
+						<li><a href="#" target="projectFrame" onclick="document.title = 'Project 1';" class="listItem">Project 1</a></li>
+						<li><a href="#" target="projectFrame" onclick="document.title = 'Project 2';" class="listItem">Project 2</a></li>
+						<li><a href="#" target="projectFrame" onclick="document.title = 'Project 3';" class="listItem">Project 3</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 
-		<div class="projectSideNav">
-			<div id="projectNavContainer">
-				<span class="close">&times;</span>
+		<!-- About Me -->
+		<div class="section" id="section4">
+			<div class="js-tilt" data-tilt>
+				<div class="tiltContent">
+					<img src="https://picsum.photos/400/600">
+					<h1>About Me</h1>
+					<p class="about">
+						&emsp;
+						<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error tempore, et labore hic sit maiores non quisquam assumenda illo provident saepe earum. Beatae, dolorum. Eius ipsum blanditiis commodi ipsa adipisci!</span>
+						<span>Totam beatae blanditiis asperiores, veritatis quam expedita velit. Nobis labore ipsam quaerat eligendi error minima ullam itaque adipisci. Quis fugiat illo, atque quisquam ratione, aliquid eos neque corporis sapiente qui?</span>
+					</p>
+				</div>
 			</div>
-			<div id="projectNavList">
-				<ul>
-					<li><a href="#" target="projectFrame" onclick="document.title = 'Project 1';" class="listItem">Project 1</a></li>
-					<li><a href="#" target="projectFrame" onclick="document.title = 'Project 2';" class="listItem">Project 2</a></li>
-					<li><a href="#" target="projectFrame" onclick="document.title = 'Project 3';" class="listItem">Project 3</a></li>
-				</ul>
-			</div>
+			<div class="arrow arrowUp" id="arrowFourth"></div>
 		</div>
 	</div>
 
@@ -102,28 +119,20 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="js/animatedHeadline/main.js" charset="utf-8"></script>
 	<script src="js/pagePiling/jquery.pagepiling.js" charset="utf-8"></script>
-	<script src="pagepilingInit.js" charset="utf-8"></script>
+	<script src="js/custom/pagepilingInit.js" charset="utf-8"></script>
 	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js" charset="utf-8"></script>
+	<script src="js/custom/sidenav.js" charset="utf-8"></script>
+	<script src="js/tilt/tilt.js" charset="utf-8"></script>
 	<script>
 		// Particles JS
-		particlesJS.load('particles-js', 'particles.json', function () {});
+		particlesJS.load('particles-js', 'assets/particles.json', function () {});
 	</script>
-	<script type="text/javascript">
-		$(document).ready(function () {
-			$("#labHamburger").on("click", function () {
-				$(".labSideNav").css('width', '10vw');
-				$("#pp-nav").css('display', 'none');
-			});
-			$("#projectHamburger").on("click", function () {
-				$(".projectSideNav").css('width', '10vw');
-				$("#pp-nav").css('display', 'none');
-			});
-			$(".close").on("click", function () {
-				$(".labSideNav").css('width', '0px');
-				$(".projectSideNav").css('width', '0px');
-				$("#pp-nav").css('display', 'block');
-			});
-		});
+	<script>
+		$(".js-tilt").tilt({
+			glare: false,
+			maxTilt: 2,
+			reset: true
+		})
 	</script>
 </body>
 </html>

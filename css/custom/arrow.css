@@ -25,25 +25,31 @@
 	border-bottom: 1px #000 solid;
 }
 
-#arrowSecond {
+.arrowDown {
 	border-right: 2px #fff solid;
 	border-bottom: 2px #fff solid;
 	bottom: 10vh;
 }
 
-#arrowSecond:before {
+.arrowDown:before {
 	border-right: 1px #fff solid;
 	border-bottom: 1px #fff solid;
 }
 
-#arrowThird {
+#thirdArrow {
+	border-right: 2px #000 solid;
+	border-bottom: 2px #000 solid;
+	bottom: 5vh;
+}
+
+#arrowFourth {
 	border-right: 2px #000 solid;
 	border-bottom: 2px #000 solid;
 	bottom: 5vh;
 	-webkit-transform: rotate(225deg);
 }
 
-#arrowThird:before {
+#arrowFourth:before {
 	border-right: 1px #000 solid;
 	border-bottom: 1px #000 solid;
 }
