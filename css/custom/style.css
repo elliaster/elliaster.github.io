@@ -36,10 +36,20 @@ object {
 	background-color: white;
 }
 
-img {
+#me {
 	position: absolute;
 	top: 20vh;
-	left: 10vw;
+	left: 8vw;
+	z-index: 2;
+	width: 20vw;
+	transform: translateZ(20px);
+	transition: 300ms;
+}
+
+#me:hover {
+	transform: scaleZ(1.5);
+	transform: translateZ(40px);
+	transition: 300ms;
 }
 
 #section4 h1 {
@@ -48,18 +58,29 @@ img {
 	top: 23vh;
 	left: 23vw;
 	padding-top: 2vh;
-	border-left: 5px solid #486FCC;
 	padding-left: 3vw;
 	padding-bottom: 2vh;
 	border-bottom: 2px solid #486FCC;
 	letter-spacing: 10px;
+	z-index: 3;
+	transform: translateZ(30px);
+	transition: 300ms;
+
+}
+
+#section4 h1:hover {
+	transition: 300ms;
+	transform: translateZ(45px);
 }
 
 .js-tilt {
 	width: 70%;
 	height: 80%;
-	background: #E0E0E0;
-	margin-left: -10px;
+	background: /*#E0E0E0*/ linear-gradient(90deg, rgba(224, 224, 224,1), rgba(255,0,0,0) 100%);
+	margin-left: -1.5vw;
+	margin-top: -5vh;
+	transform-style: preserve-3d;
+	cursor: pointer;
 }
 
 .about {
@@ -70,4 +91,10 @@ img {
 	letter-spacing: 2px;
 	top: 40vh;
 	line-height: 4vh;
+	transition: 300ms;
+}
+
+.about:hover {
+	transition: 300ms;
+	transform: translateZ(10px);
 }
