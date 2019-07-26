@@ -1,127 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<!-- Link Section -->
-	<link rel="icon" href="assets/logohh.png">
-	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
-	<link rel="stylesheet" href="css/animatedHeadline/style.css">
-	<link rel="stylesheet" href="css/animatedHeadline/reset.css">
-	<link rel="stylesheet" href="css/pagePiling/jquery.pagepiling.css">
-	<link rel="stylesheet" href="css/custom/style.css">
-	<link rel="stylesheet" href="css/custom/arrow.css">
-	<link rel="stylesheet" href="css/custom/next.css">
-	<link rel="stylesheet" href="css/custom/responsive.css"> <!-- Work on making site responsive -->
-	<link rel="stylesheet" href="css/custom/navigation.css">
-	<script src="js/animatedHeadline/modernizr.js" charset="utf-8"></script>
-	<title>Main Index</title>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://use.typekit.net/mws2yhk.css">
+     <link rel="stylesheet" href="main.css">
+     <title>Final Portfolio</title>
 </head>
 <body>
-	<div id="pagepiling">
-		<!-- Landing Page  -->
-		<div class="section active" id="section1">
-			<div id="particles-js">
-				<object type="img/xml+svg" data="assets/akashhashanLogo.svg">
-					<img src="assets/akashhashanLogo.svg" alt="Logo">
-				</object>
-				<h1 class="cd-headline letters type" id="mainHeadline">
-					<span>Main</span> <br>
-					<span class="cd-words-wrapper waiting">
-						<b class="is-visible">Portfolio</b>
-						<b>Index</b>
-					</span>
-				</h1>
-			</div>
-			<div class="arrow" id="arrowMain"></div>
-		</div>
-
-		<!-- Labs -->
-		<div class="section" id="section2">
-			<div id="labSide">
-				<span id="labSideText">Labs</span>
-			</div>
-			<a href="javascript:void(0)" class="hamburger" id="labHamburger">☰</a>
-			<iframe src="blank.html" class="labFrame" name="labFrame"></iframe>
-			<div class="arrow arrowDown"></div>
-			<!-- Navigation for Labs -->
-			<div class="labSideNav">
-				<div id="sideNavContainer">
-					<span class="back">&laquo;</span>
-					<span class="close">&times;</span>
-				</div>
-				<div id="sideNavList">
-					<ul>
-						<li id="wcpLabLoad"><a href="#" target="labFrame" onclick="document.title = 'Web Client Programming';" class="listItem">WCP</a></li>
-						<li id="ddLabLoad"><a href="#" target="labFrame" onclick="document.title = 'Digital Design';" class="listItem">DD</a></li>
-					</ul>
-				</div>
-			</div>
-
-		</div>
-
-		<!-- Projects -->
-		<div class="section" id="section3">
-			<div id="projectSide">
-				<span id="labSideText">Projects</span>
-			</div>
-			<a href="javascript:void(0)" class="hamburger" id="projectHamburger">☰</a>
-			<iframe src="blank.html" class="labFrame projectFrame" name="projectFrame"></iframe>
-			<div class="arrow arrowDown" id="thirdArrow"></div>
-			<!-- Navigation for Projects -->
-			<div class="projectSideNav">
-				<div id="projectNavContainer">
-					<span class="close">&times;</span>
-				</div>
-				<div id="projectNavList">
-					<ul>
-						<li><a href="#" target="projectFrame" onclick="document.title = 'Project 1';" class="listItem">Project 1</a></li>
-						<li><a href="#" target="projectFrame" onclick="document.title = 'Project 2';" class="listItem">Project 2</a></li>
-						<li><a href="#" target="projectFrame" onclick="document.title = 'Project 3';" class="listItem">Project 3</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-
-		<!-- About Me -->
-		<div class="section" id="section4">
-			<div class="js-tilt" data-tilt>
-				<div class="tiltContent">
-					<img src="assets/me.jpeg" id="me">
-					<h1>About Me</h1>
-					<p class="about">
-						&emsp;
-						<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error tempore, et labore hic sit maiores non quisquam assumenda illo provident saepe earum. Beatae, dolorum. Eius ipsum blanditiis commodi ipsa adipisci!</span>
-						<span>Totam beatae blanditiis asperiores, veritatis quam expedita velit. Nobis labore ipsam quaerat eligendi error minima ullam itaque adipisci. Quis fugiat illo, atque quisquam ratione, aliquid eos neque corporis sapiente qui?</span>
-					</p>
-				</div>
-			</div>
-			<div class="arrow arrowUp" id="arrowFourth"></div>
-		</div>
-	</div>
-
-	<!-- JavaScript Library Initialization  -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="js/animatedHeadline/main.js" charset="utf-8"></script>
-	<script src="js/pagePiling/jquery.pagepiling.js" charset="utf-8"></script>
-	<script src="js/custom/pagepilingInit.js" charset="utf-8"></script>
-	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js" charset="utf-8"></script>
-	<script src="js/custom/sidenav.js" charset="utf-8"></script>
-	<script src="js/tilt/tilt.js" charset="utf-8"></script>
-	<script src="js/custom/ajax.js" charset="utf-8"></script>
-	<script>
-		// Particles JS
-		particlesJS.load('particles-js', 'assets/particles.json', function () {});
-	</script>
-	<script>
-		$(".js-tilt").tilt({
-			glare: false,
-			scale: 1.0002,
-			maxTilt: 2,
-			reset: true
-		})
-	</script>
+     <div class="container" id="particles-js">
+          <div class="title">
+               <h1>Akash <br><span>Hashan</span></h1>
+          </div>
+          <div class="right" data="load">
+               <div class="menu">
+                         <i id="menu-icon" class="fas fa-bars"></i>
+               </div>
+               <div class="view-cont">
+                    <h1>Previous Works</h1>
+                    <div class="view">
+                         <ul>                
+                              <li id="vd"><span>Visual Design</span></li>
+                              <li id="dd"><span>Digital Design</span></li>
+                              <li id="wcp"><span>Web Client Programming</span></li>
+                         </ul>
+                    </div>
+                    <div class="right-bottom">
+                         <span id="sample-text"></span>
+                         <ul id="linkable">
+                              <li><i class="fab fa-github links"></i></li>
+                              <li><i class="fab fa-linkedin links"></i></li>
+                              <li><i class="fab fa-twitter links"></i></li>
+                              <li><i class="fas fa-envelope-open-text links"></i></li>
+                         </ul>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <div class="content"></div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+     <script src="main.js"></script>
+     <script>
+          particlesJS.load('particles-js', 'assets/particles.json', function() {
+               console.log('callback - particles.js config loaded');
+          });
+     </script>
 </body>
 </html>
