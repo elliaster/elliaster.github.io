@@ -1,0 +1,106 @@
+#clientOne {
+	width: 30.3vw;
+	height: 30vh;
+	position: absolute;
+	top: 30vh;
+	left: 7vw;
+	border: 2px solid white;
+	cursor: pointer;
+}
+
+#clientTwo {
+	width: 30.3vw;
+	height: 30vh;
+	position: absolute;
+	top: 30vh;
+	right: 7vw;
+	border: 2px solid white;
+	cursor: pointer;
+}
+
+#container  img {
+	height: 100%;
+	position: relative;
+	filter: blur(2px);
+	transition: 200ms;
+}
+
+#container img:hover {
+	transition: 200ms;
+	transform: scale(1.09);
+	border-radius: 1vw;
+	filter: blur(0px);
+	cursor: pointer;
+}
+
+.small {
+	transition: 200ms;
+	transform: scale(-1);
+	border-radius: 1vw;
+	filter: blur(2px);
+	cursor: pointer;
+}
+
+#container img:left {
+	transition: 200ms;
+	transform: scale(1.0);
+}
+
+.clientInfo {
+	z-index: 1;
+	position: absolute;
+	color: white;
+	font-size: 5vh;
+	top: 20vh;
+	left: 2vw;
+	text-shadow: 0.1vh 0.2vw 5px black;
+}
+
+#product {
+	position: absolute;
+	bottom: -100vh;
+	left: 37vw;
+}
+
+button {
+	background-color: white;
+	border: 0px;
+	padding: 2vh 10vw;
+	font-size: 2vh;
+	color: black;
+	transition: 300ms;
+}
+
+button:hover {
+	transition: 300ms;
+	cursor: pointer;
+	padding: 2vh 10vw 10vh 10vw;
+}
+
+#click {
+	opacity: 1;
+	transition: 300ms;
+	font-size: 3vh;
+	color: lightgray;
+}
+
+button:hover #click {
+	opacity: 1;
+	font-size: 3vh;
+	color: black;
+	transition: 300ms;
+}
+
+#content {
+	position: absolute;
+	width: 70vw;
+	bottom: -85vh;
+	color: white;
+	text-align: left;
+	left: 15vw
+}
+
+#clientTwoContentSpan {
+	font-size: 3vh;
+	color: #9f9f9f;
+}

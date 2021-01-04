@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <title>Culture - Traditional Illustration</title>
+</head>
+<body>
+        <div id="fullpage">
+                <div class="section">
+                    <div class="container">
+                            <nav role="navigation">
+                                    <ul>
+                                      <li><a href="../">Home</a></li>
+                                      <li><a href="../digital/">Digital</a>
+                                        <ul class="dropdown">
+                                            <li><a href="../digital/">Home</a></li>
+                                            <li><a href="../digital/culture.html">Culture</a></li>
+                                            <li><a href="../digital/impact.html">Impact</a></li>
+                                        </ul>
+                                      </li>
+                                      <li><a href="../traditional/">Traditional</a>
+                                        <ul class="dropdown">
+                                                <li><a href="../traditional/">Home</a></li>
+                                                <li><a href="../traditional/culture.html">Culture</a></li>
+                                                <li><a href="../traditional/impact.html">Impact</a></li>
+                                              </ul>
+                                    </li>
+                                    </ul>
+                                  </nav>
+                        <div class="cover">
+                            <img src="" alt="">
+                        </div>
+                        <p id="culture">
+                          <span id="title">Culture</span>
+                                Just like Digital Art, the culture surrounding Traditional Art is broad as it can encompass basically anything. Traditional Art is hailed to incorporate the best of what has to offer as many world famouse art is done in this format. Painters like Picasso used traditional paints to express himself and show the world what he was capable of. 
+                                <br><br>
+                                Now in 2019, many people still use traditional mediums. Looking at websites like DeviantArt show the many different ideas people have and express with traditional art. Little kids can just pick up a crayon or pencil and just draw, sparking creativity and expressing themselves.
+                        </p>
+                    </div>
+                    <img src="images/brushes.jpg" id="background">
+                </div>
+            </div>
+            <script src="../js/jquery.js"></script>
+            <script src="../js/fullpage.min.js"></script>
+            <script src="anim.js"></script>
+            <script>
+                var myFullpage = new fullpage('#fullpage', {
+                //Navigation
+                menu: '#menu',
+                lockAnchors: false,
+                anchors:['main', 'second'],
+        
+                //Scrolling
+                css3: true,
+                scrollingSpeed: 700,
+                normalScrollElements: '#element1, .element2',
+                scrollOverflow: false,
+        
+                //Accessibility
+                keyboardScrolling: true,
+                animateAnchor: true,
+                recordHistory: true,
+        
+                //Custom selectors
+                sectionSelector: '.section',
+                slideSelector: '.slide',
+        
+                lazyLoading: true
+            });
+            </script>
+</body>
+</html>

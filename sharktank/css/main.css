@@ -1,0 +1,61 @@
+body {
+	margin: 0px;
+	background-color: black;
+	color: black;
+	overflow-x: hidden;
+	font-family: barlow, sans-serif;
+}
+
+#title {
+	letter-spacing: 4vw;
+	line-height: 30vh;
+	font-weight: bolder;
+	margin-right: 10vw;
+	padding: 0px;
+	font-size: 5vh;
+	left: 12vw;
+	position: absolute;
+	color: black;
+}
+
+#topContainer {
+	height: 25vh;
+	position: absolute;
+	width: 100vw;
+	background-color: white;
+	z-index: -2;
+}
+
+object {
+	width: 10vw;
+	z-index: 2;
+	position: absolute;
+	left: 2vw;
+	top: 4vh;
+}
+
+a {
+	position: absolute;
+	color: white;
+	text-decoration: none;
+	letter-spacing: 10px;
+	font-size: 3vh;
+	top: 17vh;
+	right: 10vw;
+	color: black;
+	z-index: 2;
+}
+
+a:hover {
+	transition: 300ms;
+	transform: translateX(1vw);
+	letter-spacing: 1vw;
+}
+
+#line {
+	border-left: 2px solid black;
+	position: absolute;
+	height: 17vh;
+	right: 30vw;
+	top: 5vh;
+}

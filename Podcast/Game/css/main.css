@@ -1,0 +1,209 @@
+body {
+  margin           : 0px;
+  padding          : 0px;
+  background-color : black;
+}
+
+.container {
+  width     : 50vw;
+  height    : 90vh;
+  transform : translate(50%, 5%);
+}
+
+button {
+  z-index          : 2;
+  position         : absolute;
+  width            : 12vw;
+  margin-top       : 10px;
+  color            : white;
+  border           : 0px;
+  background-color : transparent;
+  font-size        : 5vh;
+  cursor           : pointer;
+}
+
+.backdrops {
+  z-index  : 1;
+  position : absolute;
+  top      : 0px;
+  left     : 0px;
+  width    : 100%;
+}
+
+#play {
+  top       : 20vh;
+  right     : 5vw;
+  font-size : 8vh;
+  transform : rotate(70deg);
+}
+
+#play:hover {
+  color      : red;
+  transition : 250ms;
+}
+
+#howtoplay {
+  bottom    : 30vh;
+  left      : 2vw;
+  width     : 30vw;
+  font-size : 6vh;
+}
+
+#howtoplay:hover {
+  color      : red;
+  transition : 250ms;
+}
+
+.hidden {
+  opacity : 0;
+}
+
+.arrowCont {
+  z-index  : 10;
+  position : absolute;
+  width    : 100%;
+}
+
+.kitchen-arrow {
+  z-index  : 10;
+  position : absolute;
+  width    : 100px;
+  cursor   : pointer;
+}
+
+.kitchen-leftArrow,
+.scene3-leftArrow {
+  z-index : 10;
+  top     : 20vh;
+  left    : -5vw;
+  width   : 3vw;
+}
+
+.kitchen-rightArrow,
+.scene2-rightArrow {
+  z-index : 10;
+  top     : 20vh;
+  right   : -5vw;
+  width   : 3vw;
+}
+
+.kitchen-bottomArrow,
+.scene4-bottomArrow {
+  z-index  : 10;
+  position : absolute;
+  bottom   : -85vh;
+  left     : 23vw;
+  height   : 6vh;
+}
+
+.kitchen-key {
+  z-index  : 2;
+  position : absolute;
+  top      : 28vh;
+  right    : 10vw;
+  width    : 1.5vw;
+  height   : 5vh;
+  cursor   : pointer;
+}
+
+.kitchen-sink {
+  z-index  : 2;
+  position : absolute;
+  top      : 45vh;
+  left     : 0px;
+  width    : 15vw;
+  height   : 10vh;
+  cursor   : pointer;
+}
+
+.kitchen-stove {
+  z-index  : 2;
+  position : absolute;
+  top      : 40vh;
+  left     : 19vw;
+  width    : 10vw;
+  height   : 4vh;
+  cursor   : pointer;
+}
+
+.kitchen-plates {
+  z-index   : 2;
+  position  : absolute;
+  top       : 31vh;
+  right     : 8vw;
+  width     : 4vw;
+  height    : 30vh;
+  transform : rotate(-75deg);
+  cursor    : pointer;
+}
+
+.kitchen-flowers {
+  z-index  : 3;
+  position : absolute;
+  top      : 35vh;
+  right    : 14.7vw;
+  width    : 5vw;
+  height   : 5vh;
+  cursor   : pointer;
+}
+
+.kitchen-window {
+  z-index  : 2;
+  position : absolute;
+  top      : 20vh;
+  left     : 20vw;
+  width    : 9vw;
+  height   : 16vh;
+  cursor   : pointer;
+}
+
+.kitchen-clock {
+  z-index       : 2;
+  position      : absolute;
+  top           : 16.5vh;
+  right         : 14.5vw;
+  width         : 4vw;
+  height        : 8vh;
+  border-radius : 50%;
+  cursor        : pointer;
+}
+
+.scene2-rightArrow,
+.scene3-leftArrow,
+.scene4-bottomArrow {
+  position : absolute;
+}
+
+.third-door {
+  z-index  : 10;
+  position : absolute;
+  top      : 100px;
+  right    : 12vw;
+  width    : 12vw;
+  height   : 58vh;
+  cursor   : pointer;
+}
+
+.third-door-enter {
+  z-index  : 10;
+  position : absolute;
+  top      : 100px;
+  right    : 12vw;
+  width    : 12vw;
+  height   : 58vh;
+  cursor   : pointer;
+}
+
+.second-paper {
+  z-index  : 10;
+  position : absolute;
+  top      : 45vh;
+  left     : 7vw;
+  width    : 5vw;
+  height   : 4vh;
+  cursor   : pointer;
+}
+
+.focus {
+  border : 2px solid red;
+}

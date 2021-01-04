@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <title>Culture - Digital Illustration</title>
+</head>
+<body>
+        <div id="fullpage">
+                <div class="section">
+                    <div class="container">
+                            <nav role="navigation">
+                                    <ul>
+                                      <li><a href="../">Home</a></li>
+                                      <li><a href="../digital/">Digital</a>
+                                        <ul class="dropdown">
+                                            <li><a href="../digital/">Home</a></li>
+                                            <li><a href="../digital/culture.html">Culture</a></li>
+                                            <li><a href="../digital/impact.html">Impact</a></li>
+                                        </ul>
+                                      </li>
+                                      <li><a href="../traditional/">Traditional</a>
+                                        <ul class="dropdown">
+                                                <li><a href="../traditional/">Home</a></li>
+                                                <li><a href="../traditional/culture.html">Culture</a></li>
+                                                <li><a href="../traditional/impact.html">Impact</a></li>
+                                              </ul>
+                                    </li>
+                                    </ul>
+                                  </nav>
+                        <div class="cover"></div>
+                        <p id="culture">
+                            <span id="title">Culture</span>
+                                The culture surrounding Digital Art is broad since it can encompass basically anything. Anything can be made digitally therefore anything can be Digital Art. This itself causes many different people to come in and make whatever they feel like making. This has given a huge variety to a limitless media. People have created things from the scarciest SCI-FI creatures to the most mundane of what life has to offer, all with different takes on them. This gives Digital Art a refreshing feeling as you may see the same take several times, but many other versions with new ideas and concepts also exist with that already existing idea.
+                        </p>
+                    </div>
+                    <img src="images/ipad.jpg" id="background">
+                </div>
+                <div class="section">
+                    <div class="top"></div>
+                </div>
+            </div>
+            <script src="../js/jquery.js"></script>
+            <script src="../js/fullpage.min.js"></script>
+            <script src="anim.js"></script>
+            <script>
+                var myFullpage = new fullpage('#fullpage', {
+                //Navigation
+                menu: '#menu',
+                lockAnchors: false,
+                anchors:['main', 'second'],
+        
+                //Scrolling
+                css3: true,
+                scrollingSpeed: 700,
+                normalScrollElements: '#element1, .element2',
+                scrollOverflow: false,
+        
+                //Accessibility
+                keyboardScrolling: true,
+                animateAnchor: true,
+                recordHistory: true,
+        
+                //Custom selectors
+                sectionSelector: '.section',
+                slideSelector: '.slide',
+        
+                lazyLoading: true
+            });
+            </script>
+</body>
+</html>

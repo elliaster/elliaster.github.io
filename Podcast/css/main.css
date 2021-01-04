@@ -1,0 +1,248 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	text-align: center;
+	user-select: none;
+	font-family: sans-serif;
+}
+
+/* Container 1 */
+
+.container {
+	position: relative;
+	top: 2%;
+	width: 98%;
+	height: 100vh;
+	background-color: black;
+	margin: 0 auto;
+	color: white;
+	font-family: sans-serif;
+	border-top-left-radius: 1vw;
+	display: flex;
+	justify-content: center;
+	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 99%), url("../assets/background-min.jpg");
+	background-size: cover;
+}
+
+#title {
+	justify-content: center;
+	text-align: center;
+	position: relative;
+	top: 40%;
+	font-size: 20vh;
+	font-family: sans-serif;
+}
+
+#description {
+	position: absolute;
+	bottom: 35vh;
+	font-style: italic;
+	opacity: 0.7;
+	width: 30%;
+	font-size: 1.7vh;
+}
+
+.cursor {
+	position: absolute;
+	background: white;
+	width: 0.7vw;
+	height: 20vh;
+	right: 28vw;
+	top: 40vh;
+	animation: switch 1000ms linear 1s infinite;
+}
+
+#decoCloud1 {
+	width: 50vw;
+	height: auto;
+	top: -20vh;
+	right: -10vw;
+	transform: rotate(-10deg);
+	position: absolute;
+	animation: cloud1 10s ease infinite;
+}
+
+#decoCloud2 {
+	width: 40vw;
+	height: auto;
+	bottom: -10vh;
+	left: -10vw;
+	position: absolute;
+	z-index: 2;
+	animation: cloud1 10s ease 200ms infinite;
+}
+
+/* Container 2 - Stuff You Missed In History Class */
+
+.container2 {
+	position: relative;
+	top: 2%;
+	width: 98%;
+	height: 100vh;
+	background-color: black;
+	margin: 0 auto;
+	color: white;
+	font-family: sans-serif;
+}
+
+#contentCloud1 {
+	position: absolute;
+	width: 75vw;
+	top: 10vh;
+	animation: cloud2 10s ease 200ms infinite;
+}
+
+#symihc {
+	position: absolute;
+	top: 20vh;
+	left: 20vw;
+	width: 20vw;
+	height: auto;
+	border-radius: 15px;
+	box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Container Last */
+
+.containerLast {
+	position: relative;
+	bottom: 2%;
+	width: 98%;
+	height: 100vh;
+	background-color: black;
+	margin: 0 auto;
+	color: white;
+	font-family: sans-serif;
+	border-bottom-left-radius: 1vw;
+	border-bottom-right-radius: 1vw;
+}
+
+#contentCloud2 {
+	position: absolute;
+	width: 75vw;
+	top: 10vh;
+	left: -25vw;
+	animation: cloud2 10s ease 200ms infinite;
+}
+
+#footerCloud {
+	position: absolute;
+	bottom: -5vh;
+	width: 70vw;
+	right: -2vw;
+	transform: rotate(-1.2deg);
+}
+
+#trh {
+	position: absolute;
+	top: 20vh;
+	left: 30vw;
+	width: 20vw;
+	border-radius: 15px;
+	box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
+}
+
+.trh {
+	position: relative;
+	width: 40vw;
+	height: 60vh;
+	border: 2px solid transparent;
+	left: 55vw;
+	top: 20vh;
+	display: flex;
+	justify-content: center;
+}
+
+#playBtn {
+	background: #494949;
+	color: white;
+	border: 0px;
+	padding: 2vh 4vw;
+	cursor: pointer;
+	transition: 100ms;
+	box-shadow: 0px 1vh 0px black;
+	border-radius: 10px;
+	font-size: 1.8vh;
+}
+
+#playBtn:active {
+	transition: 100ms;
+	box-shadow: 0px 5px 0px black;
+	transform: translate(0px ,5px);
+}
+
+/* Beefup and Audio */
+
+.beefupContainer {
+	position: relative;
+	width: 40vw;
+	border: 2px solid transparent;
+	left: 5vw;
+	top: 30vh;
+	justify-content: center;
+}
+
+.beefup {
+	display: block;
+	background: white;
+	color: black;
+	transition: 300ms;
+}
+
+.beefupContainer:nth-child(2) {
+	position: relative;
+	left: 53vw;
+}
+
+.beefHead {
+	cursor: pointer;
+	padding: 1.2vh 0;
+	margin: 0px;
+	padding-left: 25px;
+	transition: 1s;
+	font-size: 2.5vh;
+}
+
+.beefHead:hover {
+	color: #9B9B9B;
+	transition: 200ms;
+}
+
+.beefBody {
+	padding: 2.5vh 1.5vw;
+	text-align: left;
+	font-size: 1.7vh;
+}
+
+.beefBody, .beefHead {
+	text-align: left;
+}
+
+
+audio {
+	position: relative;
+	width: 100%;
+}
+
+#gameh1 {
+	font-size: 7.5vh;
+	width: 100%;
+	position: absolute;
+	color: white;
+	z-index: 10;
+	text-align: center;
+	top: 10%;
+}
+
+#gameButton {
+	position: absolute;
+	z-index: 10;
+	border: 2px solid white;
+	padding: 4vh 10vw;
+	top: 0;
+	left: 0px;
+	transform: translate(calc(50vw - 50%), 50vh);
+	background-color: white;
+	border: 0px;
+}

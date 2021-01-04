@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/fullpage.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/arrow.css">
+    <title>Art</title>
+</head>
+<body>
+    <div id="fullpage">
+    <div class="section">
+        <img src="images/background.jpg" id="mainBackdrop">
+    <div>
+        <span id="title">ART</span>
+        <div class="bottom">
+            <div class="arrow"></div>
+        </div>
+    </div>
+    </div>
+    <div class="section">
+            <section class="wipe-right">
+                <span>Traditional</span>
+                <img src="images/traditional.png" alt="Girl Painting">
+            </section>
+                
+            <section class="wipe-left">
+                <span>Digital</span>
+                <img src="images/digital.png" alt="Digital Drawing Tablet" id="digitalImg">
+            </section>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/fullpage.min.js"></script>
+    <script>
+        $(function () {
+            setTimeout(function () {
+                $(".bottom").animate({
+                height: "22vh"
+            }, 1200);
+                setTimeout(function () {
+                    $(".bottom").animate({
+                    height: "25vh"
+                }, 500);
+                }, 1000);
+            }, 800);
+        });
+
+        $(".wipe-right").click(function () {
+            location.href = "digital/index.html"
+        });
+
+        $(".wipe-left").click(function () {
+            location.href = "traditional/index.html"
+        });
+    </script>
+    <script>
+        var myFullpage = new fullpage('#fullpage', {
+        //Navigation
+        menu: '#menu',
+        lockAnchors: false,
+        anchors:['main', 'second'],
+
+        //Scrolling
+        css3: true,
+        scrollingSpeed: 700,
+        normalScrollElements: '#element1, .element2',
+        scrollOverflow: false,
+
+        //Accessibility
+        keyboardScrolling: true,
+        animateAnchor: true,
+        recordHistory: true,
+
+        //Custom selectors
+        sectionSelector: '.section',
+        slideSelector: '.slide',
+
+        lazyLoading: true
+    });
+    </script>
+</body>
+</html>

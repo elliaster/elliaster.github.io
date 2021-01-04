@@ -1,0 +1,84 @@
+@font-face {
+    font-family: cross;
+    src: url("../../fonts/cross.otf") format("opentype");
+}
+
+/* Main Index */
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    background-color: #e3e3e3;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.cover {
+    width: 100vw;
+    position: relative;
+    height: 100vh;
+    background-color: #e3e3e3;
+    z-index: 2;
+}
+
+.top {
+    position: relative;
+    height: 25vh;
+    widows: 100vw;
+    background-color: black;
+}
+
+p#main {
+    position: absolute;
+    color: #828282;
+    top: 30vh;
+    left: 5vw;
+    width: 35vw;
+    font-size: 1.7vw;
+    z-index: 2;
+}
+
+#title {
+    font-family: cross;
+    font-size: 7vh;
+    color: red;
+    z-index: 10;
+    position: absolute;
+    width: 50vw;
+    top: -15vh;
+}
+
+/* Culture */
+
+p#culture {
+    position: absolute;
+    color: #828282;
+    top: 25vh;
+    left: 5vw;
+    width: 35vw;
+    font-size: 1.7vw;
+    z-index: 2;
+}
+
+/* Impact */
+p#impact {
+    position: absolute;
+    color: #828282;
+    top: 25vh;
+    left: 5vw;
+    width: 35vw;
+    font-size: 1.5vw;
+    z-index: 2;
+}
+
+#background {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100vh;
+    opacity: 0.5;
+}

@@ -1,0 +1,38 @@
+html {
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: min-content;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    top: 0.75vh;
+    border-radius: 10px;
+    background-color: teal;
+    color: white;
+    box-shadow: 1px 1px 5px rgba(0,0,0,1);
+}
+
+.info-container {
+    padding-left: 25px;
+}
+
+.info {
+    font-size: 1.2rem;
+    width: 90%;
+    text-indent: 1vw;
+}
+
+video {
+    width: 65vw;
+    height: 72vh;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/tiny-slider.css">
+    <script src="assets/js/tiny-slider.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Visual Design</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="slider">
+            <div class="slider-container">
+                <img src="img/" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+        tns({
+
+            // parent container
+            container: '.slider',
+
+            // or 'gallery'
+            mode: 'carousel',
+
+            // or 'vertical'
+            axis: 'horizontal',
+
+            // number of items to display per slide
+            items: 1,
+
+            // space between slides
+            gutter: 10,
+
+            // space on the outside
+            edgePadding: 100,
+
+            // positive integer
+            fixedWidth: false,
+
+            // auto set the width
+            autoWidth: false,
+
+            // maximum viewport width for fixedWidth/autoWidth
+            viewportMax: false,
+
+            // how many slides to slide at a time
+            slideBy: 1,
+
+            // center the active slide
+            center: true,
+
+            // shows controls
+            controls: true,
+
+            // or 'bottom'
+            controlsPosition: 'top',
+
+            // custom prev/next text
+            controlsText: ['‹', '›'],
+
+            // container to hold the controls
+            controlsContainer: false,
+
+            // shows prev/next buttons
+            prevButton: false,
+            nextButton: false,
+
+            // shows nav dots
+            nav: true,
+
+            // or 'bottom'
+            navPosition: 'bottom',
+
+            // container to hold the nav dots
+            navContainer: false,
+
+            // uses thumbnails as nav dots
+            navAsThumbnails: true,
+
+            // shows navigation arrows
+            arrowKeys: true,
+
+            // animation speed
+            speed: 300,
+
+            // autoplay options
+            autoplay: false,
+            autoplayPosition: 'top', // or 'bottom'
+            autoplayTimeout: 5000,
+            autoplayDirection: 'forward', // or 'backward'
+            autoplayText: ['start', 'stop'],
+            autoplayHoverPause: true,
+            autoplayButton: false,
+            autoplayButtonOutput: true,
+            autoplayResetOnVisibility: true,
+
+            // animation options
+            animateIn: 'tns-fadeIn',
+            animateOut: 'tns-fadeOut',
+            animateNormal: 'tns-normal',
+            animateDelay: false,
+
+            // infinite loop
+            loop: true,
+
+            // moves to the opposite edge when reaching the first or last slide.
+            rewind: false,
+
+            // auto set the height
+            autoHeight: true,
+
+            // an object containing breakpoints
+            responsive: false,
+
+            // enables lazy load
+            lazyload: true,
+
+            // CSS selector of images to lazy load
+            lazyloadSelector: '.tns-lazy-img',
+
+            // enables touch events
+            touch: false,
+
+            // enables mouse drag
+            mouseDrag: false,
+
+            // swipe or drag will not be triggered if the angle is not inside the range when set
+            swipeAngle: 15,
+
+            // define the relationship between nested sliders.
+            // "inner" | "outer" | false
+            nested: true,
+
+            // prevents action when running
+            preventActionWhenRunning: false,
+
+            // prevents body scroll on touch device
+            preventScrollOnTouch: false,
+
+            // whether the slider will be frozen (controls, nav, autoplay and other functions will stop work) when all slides can be displayed in one page.
+            freezable: true,
+
+            // callback
+            onInit: false,
+
+            // saves browser capability variables to localStorage and without detecting them everytime the slider runs if set to true.
+            useLocalStorage: true,
+
+            // optional Nonce attribute for inline style tag to allow slider usage without `unsafe-inline Content Security Policy source.
+            nonce: false
+
+        });
+    </script>
+</body>
+
+</html>

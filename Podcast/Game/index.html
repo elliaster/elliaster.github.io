@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/inv.css">
+	<title>Podcast "Game"</title>
+</head>
+<body>
+	<div class="container">
+		<div class="startScreen">
+			<button id="play">PLAY</button>
+			<br>
+			<button id="howtoplay">HOW TO PLAY</button>
+			<img src="backdrops/Start_Screen.png" class="backdrops">
+		</div>
+
+		<div class="firstScene">
+			<div class="kitchen-key"></div>
+			<div class="kitchen-sink"></div>
+			<div class="kitchen-stove"></div>
+			<div class="kitchen-plates"></div>
+			<div class="kitchen-flowers"></div>
+			<div class="kitchen-window"></div>
+			<div class="kitchen-clock"></div>
+			<img src="backdrops/kitchen_with_key.png" id="kitchen-kitchenScene" class="backdrops">
+			<div class="arrowCont">
+				<img src="img/leftArrow.svg" class="kitchen-arrow kitchen-leftArrow">
+				<img src="img/rightArrow.svg" class="kitchen-arrow kitchen-rightArrow">
+			</div>
+		</div>
+
+		<div class="secondScene">
+			<div class="second-paper"></div>
+			<img src="backdrops/backyard_with_paper.png" id="backyardScene" class="backdrops">
+			<div class="arrowCont">
+				<img src="img/rightArrow.svg" class="scene2-rightArrow">
+			</div>
+		</div>
+
+		<div class="thirdScene">
+			<div class="third-door"></div>
+			<img src="backdrops/hall.png" id="hall" class="backdrops">
+			<div class="arrowCont">
+				<img src="img/leftArrow.svg" class="scene3-leftArrow">
+			</div>
+		</div>
+
+		<div class="howtoplay">
+			<div class="htpContent">
+				Dear Player, <br><br>
+				The game is very simple. <br> All you do is look for the <span>clues</span> and <span>items</span> that will help you find the suspect, or conclusion. Maybe there is no conclusion. Who knows?
+				Just click on items and if they are useful the detective will pick them up and put them in his inventory. You can click on the item in the inventory and then on a part of a
+				scene and see if that item does anything, or that was the idea anyways.<br>
+				<span>Good Luck!</span> <br>
+				<span id="signed">Signed <br> &emsp;-Game Maker</span>
+			</div>
+			<button id="htpBack">Back</button>
+		</div>
+
+		<div class="inventory">
+			<div class="box" id="select1"></div>
+			<div class="box" id="select2"></div>
+			<div class="box" id="select3"></div>
+		</div>
+		<div id="playerInfo">
+			<span id="playerCom"></span>
+			<img src="img/avatar.jpg" alt="Player Character" class="player">
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" charset="utf-8"></script>
+	<script src="js/main.js" charset="utf-8"></script>
+	<script src="js/arrow.js" charset="utf-8"></script>
+	<script src="js/inv.js" charset="utf-8"></script>
+</body>
+</html>

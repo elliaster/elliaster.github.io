@@ -1,0 +1,72 @@
+@charset "UTF-8";
+body {
+	background: #242c3f;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	color: #f2f0ed;
+}
+
+#particles-js {
+	height: 100vh;
+	width: 100vw;
+}
+
+.title {
+	font-family: helvetica, sans-serif;
+	color: #f2f0ed;
+	font-size: 10vh;
+	position: absolute;
+	top: 15vh;
+	left: 20vw;
+	opacity: 0.8;
+	text-shadow: 5px 2px 0px rgba(255, 255, 255, 0.5);
+}
+
+.title span {
+	position: relative;
+	left: 15vw;
+	top: -10vh;
+	font-size: 15vh;
+}
+
+a.portlinks:link {
+	text-decoration: none;
+}
+
+#view {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	background-color: white;
+	visibility: hidden;
+}
+
+.translate {
+	transform: translateX(40vw);
+}
+
+.screen {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	visibility: hidden;
+	opacity: 0;
+	background-color: red;
+	z-index: 4;
+	cursor: pointer;
+}
+
+.view-cont h1 {
+	cursor: pointer;
+	color: white;
+	transition: 300ms;
+}
+
+.view-cont h1:hover {
+	color: #ff9185;
+	transition: 300ms;
+}

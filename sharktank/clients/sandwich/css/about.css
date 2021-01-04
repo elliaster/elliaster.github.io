@@ -1,0 +1,115 @@
+#background {
+	position: relative;
+	user-select: none;
+}
+
+#shade {
+	z-index: 1;
+}
+
+#login {
+	z-index: 3;
+}
+
+div#container {
+	position: absolute;
+	z-index: 3;
+	width: 40vw;
+	bottom: 20vh;
+	left: 5vw;
+	font-size: 2.5vh;
+
+}
+
+#teamContainer {
+	width: 30vw;
+	height: 30vh;
+	top: 12vh;
+	left: 5vw;
+	position: absolute;
+	z-index: 4;
+}
+
+i {
+	padding-left: 2vw;
+}
+
+.tarik {
+    display: inline-block;
+    padding: 0 1vw 0 3vw;
+    margin-top: 2vh;
+    margin-left: 2vw;
+    height: 6vh;
+    font-size: 2.2vh;
+    line-height: 5.8vh;
+    border-radius: 10vw;
+    background-color: #f1f1f1;
+}
+
+.tarik img {
+    float: left;
+    margin: 0.8vh 0 0 -0.5vw;
+    height: 6vh;
+    width: 3vw;
+    border-radius: 50%;
+}
+
+.paola {
+    display: inline-block;
+    padding: 0 1vw 0 3vw;
+    margin-top: 2vh;
+    margin-left: 2vw;
+    height: 6vh;
+    font-size: 2.2vh;
+    line-height: 5.8vh;
+    border-radius: 10vw;
+    background-color: #f1f1f1;
+}
+
+.paola img {
+    float: left;
+    margin: 8.9vh 0 0 -0.5vw;
+    height: 6vh;
+    width: 3vw;
+    border-radius: 50%;
+}
+
+.brian {
+	display: inline-block;
+        padding: 0 1vw 0 3vw;
+        margin-top: 2vh;
+        margin-left: 2vw;
+        height: 6vh;
+        font-size: 2.2vh;
+        line-height: 5.8vh;
+        border-radius: 10vw;
+        background-color: #f1f1f1;
+}
+
+.brian img {
+    float: left;
+    margin: 16.9vh 0 0 -0.5vw;
+    height: 6vh;
+    width: 3vw;
+    border-radius: 50%;
+}
+
+.tenzin {
+    display: inline-block;
+    padding: 0 1vw 0 3vw;
+    margin-top: 2vh;
+    margin-left: 2vw;
+    height: 6vh;
+    font-size: 2.2vh;
+    line-height: 5.8vh;
+    border-radius: 10vw;
+    background-color: #f1f1f1;
+}
+
+.tenzin img {
+    float: left;
+    margin: 24.9vh 0 0 -0.5vw;
+    height: 6vh;
+    width: 3vw;
+    border-radius: 50%;
+}

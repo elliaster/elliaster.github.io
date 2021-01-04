@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <title>Traditional Illustration</title>
+</head>
+<body data="main">
+    <div id="fullpage">
+        <div class="section">
+            <div class="container">
+                    <nav role="navigation">
+                            <ul>
+                              <li><a href="../">Home</a></li>
+                              <li><a href="../digital/">Digital</a>
+                                <ul class="dropdown">
+                                  <li><a href="../digital/">Home</a></li>
+                                  <li><a href="../digital/culture.html">Culture</a></li>
+                                  <li><a href="../digital/impact.html">Impact</a></li>
+                                </ul>
+                              </li>
+                              <li><a href="../traditional/">Traditional</a>
+                                <ul class="dropdown">
+                                        <li><a href="../traditional/">Home</a></li>
+                                        <li><a href="../traditional/culture.html">Culture</a></li>
+                                        <li><a href="../traditional/impact.html">Impact</a></li>
+                                      </ul>
+                            </li>
+                            </ul>
+                          </nav>
+                <div class="cover">
+                    <img src="" alt="">
+                </div>
+                
+                <p id="main">
+                    <span id="title">Traditional Art</span>
+                    Traditional Art is art made using paper, canvas or other physical surfaces with art supplies such as: pencils, brushes, paints, etc. These traditional arts are continued by many artists as it is easily made any where at anytime and can produce great results. People still use traditional mediums such as paint because they offer a satisfactory feeling or greater look than that of a digital one. There is a texture dependant on what medium you use, and that can be replecated by computers but to a lesser extent.
+                </p>
+            </div>
+            <img src="images/canvas.jpg" id="background">
+        </div>
+    </div>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/fullpage.min.js"></script>
+    <script src="anim.js"></script>
+    <script>
+        var myFullpage = new fullpage('#fullpage', {
+        //Navigation
+        menu: '#menu',
+        lockAnchors: false,
+        anchors:['main', 'second'],
+
+        //Scrolling
+        css3: true,
+        scrollingSpeed: 700,
+        normalScrollElements: '#element1, .element2',
+        scrollOverflow: false,
+
+        //Accessibility
+        keyboardScrolling: true,
+        animateAnchor: true,
+        recordHistory: true,
+
+        //Custom selectors
+        sectionSelector: '.section',
+        slideSelector: '.slide',
+
+        lazyLoading: true
+    });
+    </script>
+</body>
+</html>

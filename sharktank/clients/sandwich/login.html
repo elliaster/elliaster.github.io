@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/animsition.css">
+	<link rel="stylesheet" href="css/login.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/animsition.js" charset="utf-8"></script>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Log In</title>
+</head>
+<body>
+	<div class="animsition" data-animsition-in-class="fade-in-up-lg" data-animsition-in-duration="1000" data-animsition-out-class="fade-out-left-lg" data-animsition-out-duration="800">
+		<object type="image/svg+xml" data="SVG/logo.svg" id="logo">
+			<img src="SVG/logo.svg">
+		</object>
+		<span id="companyName">Log In</span>
+			<div id="navigation">
+				<nav id="nav" class="animsition" data-animsition-in-class="fade-in-up-sm" data-animsition-in-duration="2500" data-animsition-out-class="fade-out-left-lg" data-animsition-out-duration="800">
+					<ul>
+						<li><a href="index.html"class="animsition-link" id="home">Home</a></li>
+						<li><a href="product.html" class="animsition-link" id="product">Product</a></li>
+						<li><a href="about.html" class="animsition-link" id="about">About Us</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div id="shade"></div>
+			<label for="employee">Customer Log In</label>
+			<div class="modal">
+				<form class="modal-content animate" action="/action_page.php">
+					<div class="container">
+						<label for="uname"><b>Username</b></label>
+						<input type="text" placeholder="Enter Username" name="uname" required>
+						<label for="psw"><b>Password</b></label>
+						<input type="password" placeholder="Enter Password" name="psw" required>
+						<button type="submit">Login</button>
+						<label id="rememberMe">
+							<input type="checkbox" checked="checked" name="remember"> Remember me
+						</label>
+					</div>
+
+					<div class="container">
+						<button type="button" class="forgotPassword">Forgot password</button>
+					</div>
+				</form>
+			</div>
+
+			<object type="image/png" data="img/hung_clothes.jpeg" id="background">
+				<img src="img/hung_clothes.jpeg">
+			</object>
+	</div>
+
+	<script src="js/init.js"></script>
+</body>
+</html>

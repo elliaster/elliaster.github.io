@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/mws2yhk.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <title>Portfolio - Mohammed Hashan</title>
+</head>
+
+<body>
+    <div class="container" id="particles-js">
+        <div class="title">
+            <h1>Mohammed<br><span>Hashan</span></h1>
+        </div>
+        <div class="right" data="load">
+            <div class="menu">
+                <i id="menu-icon" class="fas fa-bars"></i>
+            </div>
+            <div class="view-cont">
+                <h1>Portfolio</h1>
+                <div class="view">
+                    <ul>
+                        <a href="Podcast/index.html" class="portLinks" target="view">
+                            <li id="pc"><span>Podcast</span></li>
+                        </a>
+                        <a href="sharktank/" class="portLinks" target="view">
+                            <li id="tw"><span>Tresway</span></li>
+                        </a>
+                        <a href="graphicsMediaArtsComp/" class="portLinks" target="view">
+                            <li id="gmc"><span>Graphic Media Competition</span></li>
+                        </a>
+                        <a href="animation/" class="portLinks" target="view">
+                            <li id="anim"><span>Animation Final</span></li>
+                        </a>
+                        <a href="VD/" class="portLinks" target="view">
+                            <li id="vd"><span>Visual Design</span></li>
+                        </a>
+                        <a href="logos/" class="portLinks" target="view">
+                            <li id="ld"><span>Logo Design</span></li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="right-bottom">
+                    <span id="sample-text"></span>
+                    <ul id="linkable">
+                        <li><i class="fab fa-github links"></i></li>
+                        <li><i class="fab fa-linkedin links"></i></li>
+                        <li><i class="fab fa-twitter links"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="screen"></div>
+    </div>
+    <iframe src="" frameborder="0" name="view" id="view"></iframe>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'assets/particles.json', function () {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
+</body>
+
+</html>

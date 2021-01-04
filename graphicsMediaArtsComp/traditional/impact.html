@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <title>Impact - Traditional Illustration</title>
+</head>
+<body>
+        <div id="fullpage">
+                <div class="section">
+                    <div class="container">
+                            <nav role="navigation">
+                                    <ul>
+                                      <li><a href="../">Home</a></li>
+                                      <li><a href="../digital/">Digital</a>
+                                        <ul class="dropdown">
+                                            <li><a href="../digital/">Home</a></li>
+                                            <li><a href="../digital/culture.html">Culture</a></li>
+                                            <li><a href="../digital/impact.html">Impact</a></li>
+                                        </ul>
+                                      </li>
+                                      <li><a href="../traditional/">Traditional</a>
+                                        <ul class="dropdown">
+                                                <li><a href="../traditional/">Home</a></li>
+                                                <li><a href="../traditional/culture.html">Culture</a></li>
+                                                <li><a href="../traditional/impact.html">Impact</a></li>
+                                              </ul>
+                                    </li>
+                                    </ul>
+                                  </nav>
+                        <div class="cover"></div>
+                        <p id="impact">
+                          <span id="title">Impact</span>
+                                Since the advent of Traditional art mediums like paint, people have been using them to illustrate what they see the world as. From cavemen drawing animals of their time on the wall with dyes, to Van Gogh painting the night sky with his oil paints and brushes, art has been an influence on everything from politics to everyday normal life. People's moods are influenced by art they witness, and their views of the world can change as well. 
+                                <br><br>
+                                Traditional Art gave the people of the past ways to express ideas they had thought in their heads like Da Vinci's flying machine concept. He had the idea and needed a way to express it and show it to others, so he turned to the traditional medium of sketching to get his point across.
+                        </p>
+                    </div>
+                    <img src="images/brush_stroke.jpg" id="background">
+                </div>
+            </div>
+            <script src="../js/jquery.js"></script>
+            <script src="../js/fullpage.min.js"></script>
+            <script src="anim.js"></script>
+            <script>
+                var myFullpage = new fullpage('#fullpage', {
+                //Navigation
+                menu: '#menu',
+                lockAnchors: false,
+                anchors:['main', 'second'],
+        
+                //Scrolling
+                css3: true,
+                scrollingSpeed: 700,
+                normalScrollElements: '#element1, .element2',
+                scrollOverflow: false,
+        
+                //Accessibility
+                keyboardScrolling: true,
+                animateAnchor: true,
+                recordHistory: true,
+        
+                //Custom selectors
+                sectionSelector: '.section',
+                slideSelector: '.slide',
+        
+                lazyLoading: true
+            });
+            </script>
+</body>
+</html>

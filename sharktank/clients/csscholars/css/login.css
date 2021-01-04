@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	overflow: hidden;
+}
+
+h2{
+	position: absolute;
+	top: 400vh;
+	font-family: sans-serif;
+	overflow-x: hidden;
+	user-select: none;
+	margin: 0px;
+}
+
+#username{
+	position: absolute;
+	width: 15vw;
+	height: 4vh;
+	left: 10vw;
+	top: 2vh;
+}
+
+#password{
+	position: absolute;
+	top: 10vh;
+	width: 15vw;
+	height: 4vh;
+	left: 10vw;
+}
+
+#email {
+	position: absolute;
+	top: 18vh;
+	width: 15vw;
+	height: 4vh;
+	left: 10vw;
+}
+
+h5{
+	position: absolute;
+	top: 23vh;
+	right:10vw;
+	font-family: sans-serif
+}
+
+#signUpBtn {
+	background: #D3923E;
+	font-size: 12px;
+	position: absolute;
+	top: 30vh;
+	left: 10vw;
+	width: 8vw;
+	height: 4vh;
+	font-family: sans-serif;
+	border: 0px;
+}
+
+#signUpBtn:hover {
+	transition: 350ms;
+	background-color: #F2BE54;
+}
+
+#css {
+	width: 50px;
+	top: 10px;
+	left: 50px;
+	position: absolute;
+}
+
+#cssTag {
+	position: absolute;
+	top: 25px;
+	left: 110px;
+	font-size: 1.2rem;
+	letter-spacing: -1px;
+}
+
+nav {
+	top: 1vh;
+	position: absolute;
+	right: 2vw;
+}
+
+ul li {
+	display: inline;
+}
+
+#pass {
+	position:absolute;
+	font-size: 2.2vh;
+	top: 6vh;
+	right:25vw;
+}
+
+#us {
+	position:absolute;
+	font-size: 2.2vh;
+	top: -2vh;
+	right:25vw;
+}
+
+#ajax {
+	position: absolute;
+	width: 550px;
+	height: 350px;
+	top: 175px;
+	right: 300px;
+}
+
+#loadLogin, #loadSignUp {
+	top: 15vh;
+	position: absolute;
+	width: 15vw;
+	height: 10vh;
+	background-color: #D3923E;
+	border: 0px;
+	font-size: 2vh;
+	padding-right: 1.5vw;
+	text-align: right;
+}
+
+input {
+	border: 0px;
+	background-color: rgba(0,0,0,0);
+	border-bottom: 2px solid black;
+}
+
+#loadLogin:hover, #loadSignUp:hover {
+	transition: 350ms;
+	background-color: #F2BE54;
+	transform: translateX(2vw);
+}
+
+#loadSignUp {
+	top: 30vh;
+}
+
+#emailH6 {
+	position: absolute;
+	top: 14vh;
+	left: 3vw;
+	font-size: 2.2vh;
+}

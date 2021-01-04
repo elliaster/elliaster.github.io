@@ -1,0 +1,74 @@
+.inventory {
+  z-index  : 10;
+  position : absolute;
+  bottom   : 2vh;
+  left     : 1vw;
+  width    : 21.1vw;
+  height   : 10vh;
+}
+
+.inventory .box {
+  display : inline-block;
+  width   : calc(20vw / 3);
+  height  : 10vh;
+  border  : 2px solid white;
+  cursor  : pointer;
+}
+
+.inventory .box:active {
+  border : 2px solid red;
+}
+
+.player {
+  z-index  : 10;
+  position : absolute;
+  right    : 1vw;
+  bottom   : 2vh;
+  width    : 100px;
+  height   : 100px;
+  border   : 2px solid white;
+}
+
+#playerCom {
+  z-index    : 10;
+  position   : absolute;
+  bottom     : 5vh;
+  left       : 30vw;
+  color      : white;
+  text-align : left;
+  width: 12vw;
+}
+
+#keyImg {
+  position : absolute;
+  top      : 10%;
+  left     : 8%;
+}
+
+#paperImg {
+  position : absolute;
+  top      : 10%;
+  left     : 40%;
+}
+
+.htpContent {
+	color: white;
+	font-size: 2.5vh;
+	padding: 100px;
+}
+
+.htpContent span {
+	color: red;
+}
+
+#signed {
+	position: absolute;
+	right: 20px;
+	top: 60vh;
+}
+
+#htpBack {
+	border: 2px solid white;
+	position: absolute;
+	bottom: 10px;
+}

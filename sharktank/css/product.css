@@ -1,0 +1,52 @@
+body {
+	 background: linear-gradient(100deg,  black 50%,  white 50%);
+	 margin: 0px;
+	 width: 100vw;
+	 height: 100vh;
+	 overflow: hidden;
+	 color: white;
+}
+
+#productImage {
+	width: 40vw;
+	position: absolute;
+	top: 25vh;
+	right: 2vw;
+}
+
+#ourProduct {
+	position: absolute;
+	top: 15vh;
+	left: 5vw;
+	font-size: 7vh;
+}
+
+p {
+	position: absolute;
+	top: 32vh;
+	left: 10vw;
+	font-size: 2vh;
+	line-height: 3.5vh;
+	width: 35vw;
+}
+
+#productSpan2 {
+	border-bottom: 0.1vh solid white;
+	padding: 0 1vw;
+}
+
+#back {
+	font-size: 10vh;
+	position: absolute;
+	cursor: pointer;
+	transition: 300ms;
+	top: -5vh;
+	left: -1.5vw;
+	padding: 2vh 4vw;
+}
+
+#back:hover {
+	transition: 300ms;
+	transform: translateX(-30px);
+	color: red;
+}

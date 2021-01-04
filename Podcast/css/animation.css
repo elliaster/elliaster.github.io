@@ -1,0 +1,35 @@
+@keyframes switch {
+	0% {
+		opacity: 0;
+	} 100% {
+		opacity: 1;
+	}
+}
+
+@keyframes cloud1 {
+	0% {
+		transform: translateX(12px);
+	} 25% {
+		transform: translateX(3px);
+	} 50% {
+		transform: translateX(10px);
+	} 75% {
+		transform: translateX(0px);
+	} 100% {
+		transform: translateX(12px);
+	}
+}
+
+@keyframes cloud2 {
+	0% {
+		transform: translate(10px, 6px);
+	} 25% {
+		transform: translate(15px, 2px);
+	} 50% {
+		transform: translate(13px, 8px);
+	} 75% {
+		transform: translate(3px, 3px);
+	} 100% {
+		transform: translate(10px, 6px);
+	}
+}

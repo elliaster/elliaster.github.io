@@ -1,0 +1,12 @@
+<div id="log">
+	<h2>Sign Up</h2>
+	<input id="username" type="text" placeholder="Username">
+	<input id="password" type="password" placeholder="Password">
+	<input id="email" type="text" placeholder="email">
+	<h5>Dont have an account? Sign up here! </h5>
+	<button id="signUpBtn">Login</button>
+</div>
+
+<h6 id="us">Username</h6>
+<h6 id="pass">Password</h6>
+<h6 id="emailH6">Email</h6>

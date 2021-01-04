@@ -1,0 +1,26 @@
+#description {
+	top: 0px;
+}
+
+form {
+	position: absolute;
+	top: 30vh;
+	right: 20vw;
+	font-size: 2vh;
+}
+
+#button {
+	position: absolute;
+	top: 22vh;
+	font-size: 2vh;
+	border: 0px;
+	left: 7vw;
+}
+
+input {
+	border: 0px;
+	width: 15vw;
+	height: 4vh;
+	padding-left: 2vw;
+	font-size: 2vh;
+}

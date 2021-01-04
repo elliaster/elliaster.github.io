@@ -1,0 +1,29 @@
+<div id="clientOneContentDiv">
+	<span id="clientTwoContentSpan">Client One</span>
+	 <p class="contentInfo" id="clientOneContent">
+		Our first client was the Community Service Scholars.
+		Their product was a program which provided local income families with school supplies all-year long, so that the families could focus on exceeding in school.
+		They wanted for their website was a functioning website that would be able to promote their program to the local community.
+		For the website, they wanted 2 specific sections.
+		One of which was where the user can both login and sign-up for the program.
+		The purpose of this first section was for the next section that they wanted to include, which was a donate page.
+		The purpose of the donate page was so the user would be able to donate school supplies for these families.
+		Our approach to what our client’s website was to include the two sections they wanted and as well as additional web pages.
+		One of which is where we talk about the team and their role in the program.
+		Another was where we talked about the program and what inspired them to initially start the program.
+	</p>
+</div>
+
+<div id="clientTwoContentDiv">
+	<span id="clientTwoContentSpan">Client Two</span>
+	<p class="contentInfo" id="clientTwoContent">
+		Our second client was the Sandwich Guys and Girl Inc.
+		Their product was a folding machine that will fold your clothes for you.
+		The inspiration of why they choose this product was because they wanted people to not have to worry about folding clothes and wanted people to focus on other tasks.
+		Two things they specifically wanted for their website was a page that allowed the user to purchase the product, and another page that would explain each of the team member’s role for the product and what they contributed.
+		Our approach to our client’s website was to include the pages that they wanted as well as a login page for the user.
+		The purpose of this page was to allow the team to work on the website.
+		Another purpose of this page was so that when a user were to login, they would be able to donate for the product.
+		We wanted to include this section because we knew that it would tough for this product to be made. So because of this, we allowed users and members to donate to help keep the product running, and even purchasing the product one day.
+	</p>
+</div>
