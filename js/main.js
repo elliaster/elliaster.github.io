@@ -89,3 +89,11 @@ $("#ld").click(function () {
 $(".view-cont h1").click(function () {
 	$("#view").css({ "visibility": "hidden" });
 });
+
+$(".view-cont h1").mouseenter(function () {
+	$(this).text("Home");
+});
+
+$(".view-cont h1").mouseleave(function () {
+	$(this).text("Portfolio");
+});
