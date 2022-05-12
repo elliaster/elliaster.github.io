@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Mohammed Hashan - Portfolio</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="botbox"></div>
+        <div class="nav">
+            <ul id="links">
+                <li class="linkName" id="home">Home</li>
+                <li class="linkName" id="portfolio">Portfolio</li>
+                <li class="linkName" id="contact">Contact</li>
+                <li class="linkName" id="about">About</li>
+            </ul>
+        </div>
+        <h1>Mohammed<br> Hashan</h1>
+        <img id="logo" src="img/logo.png" alt="logo">
+    </div>
+    <div id="particles-js" style="position:fixed;width:100%;z-index:-10;"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'assets/particle.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
+</body>
+</html>

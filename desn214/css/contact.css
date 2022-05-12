@@ -1,0 +1,57 @@
+body {
+    cursor: initial;
+    overflow-x: hidden;
+}
+
+#logo {
+    position: absolute;
+    width: 75px;
+}
+
+.nav {
+    position: relative;
+    top: 20vh;
+}
+
+h2 {
+    font-style: italic;
+    font-size: 4rem;
+    line-height: 3.5rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: absolute;
+    left: 35vw;
+    top: 20vh;
+}
+
+input[type=text], textarea, input[type=submit] {
+    border: 2px solid #78a4be;
+    font-size: 1.2rem;
+    display: block;
+    padding: 10px;
+    font-style: italic;
+    color: #78a4be;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+input[type=submit] {
+    width: 100px;
+    justify-content: right;
+}
+
+.footer {
+    position: absolute;
+    bottom: -20vh;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.footHR {
+    width: 50%;
+}

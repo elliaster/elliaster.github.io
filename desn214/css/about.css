@@ -1,0 +1,43 @@
+body {
+    cursor: initial;
+    overflow-x: hidden;
+}
+
+#logo {
+    position: absolute;
+    width: 75px;
+}
+
+.nav {
+    position: relative;
+    top: 20vh;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: absolute;
+    left: 35vw;
+    top: 20vh;
+}
+
+h2 {
+    font-style: italic;
+    font-size: 4rem;
+    line-height: 3.5rem;
+}
+
+#aboutText {
+    width: 22vw;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+
+#photo {
+    width: 200px;
+    height: fit-content;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
