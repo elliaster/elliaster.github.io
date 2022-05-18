@@ -34,25 +34,25 @@ $(function () {
     $("#home").click(function () {
         transition();
         setTimeout(function () {
-            location.href = "index.html"
+            location.href = "../index.html"
         },1000);
     });
     $("#portfolio").click(function () {
         transition();
         setTimeout(function () {
-            location.href = "portfolio/index.html"
+            location.href = "../portfolio/index.html"
         },1000);
     });
     $("#contact").click(function () {
         transition();
         setTimeout(function () {
-            location.href = "contact/index.html"
+            location.href = "../contact/index.html"
         },1000);
     });
     $("#about").click(function () {
         transition();
         setTimeout(function () {
-            location.href = "about/index.html"
+            location.href = "../about/index.html"
         },1000);
     });
 })
